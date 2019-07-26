@@ -30,6 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 
       commitStatusBarItem.text = commitPrefillText;
+      selectedRepository.inputBox.value = `${commitPrefillText} `;
 
       if (intervalId) {
         clearInterval(intervalId);
